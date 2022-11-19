@@ -10,9 +10,7 @@ if __name__ == '__main__':
     marks = (5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 4, 2, 3, 4, 2, 4, 4, 3, 3, 2, 2, 2, 3, 4)
     counter = [0]*6
 
-    i = 0
-    while i < len(marks):
+    for i, item in enumerate(marks):
         counter[marks[i]] += 1
-        i = i + 1
 
     print(counter[5])
